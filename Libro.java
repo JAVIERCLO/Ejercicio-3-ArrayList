@@ -6,11 +6,10 @@ public class Libro {
     private String autor;
     private String fechaPubli;
     private String genero;
-
     //Constructor
-
+    public Libro(String isbn, String titulo, String autor, int fechaPubli, String genero) {
+    }
     //Metodos
-
     //set & get
     //titulo
     public void setTitulo(String titulo) {
