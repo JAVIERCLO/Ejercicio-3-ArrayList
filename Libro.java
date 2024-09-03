@@ -1,49 +1,43 @@
-//Clase con metodos y atributos de libro
-public class Libro {
-    //Atributos
-    private  String titulo;
-    private String ISBN;
+class Libro {
+    private String titulo;
+    private String isbn;
     private String autor;
-    private String fechaPubli;
+    private int fechaPubli;
     private String genero;
-    //Constructor
-    public Libro(String isbn, String titulo, String autor, int fechaPubli, String genero) {
-    }
-    //Metodos
-    //set & get
-    //titulo
-    public void setTitulo(String titulo) {
+
+    public Libro(String titulo, String isbn, String autor, int fechaPubli, String genero) {
         this.titulo = titulo;
-    }
-    public String getTitulo(String titulo){
-        return this.titulo;
-    }
-    //ISBN
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
-    }
-    public String getISBN(String ISBN){
-        return this.ISBN;
-    }
-    //autor
-    public void setAutor(String autor) {
+        this.isbn = isbn;
         this.autor = autor;
-    }
-    public String getAutor(String autor){
-        return this.autor;
-    }
-    //fecha de publicacion
-    public void setFechapubli(String fechaPubli) {
         this.fechaPubli = fechaPubli;
-    }
-    public String getfechaPubli(String fechaPubli){
-        return this.fechaPubli;
-    }
-    //genero
-    public void setGenero(String genero) {
         this.genero = genero;
     }
-    public String getgenero(String genero){
-        return this.genero;
+
+    // Métodos getter y setter
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getfechaPubli() {
+        return fechaPubli;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    @Override
+    public String toString() {
+        return "Título: " + titulo + ", ISBN: " + isbn + ", Autor: " + autor + ", Publicado en: " + fechaPubli + ", Género: " + genero;
     }
 }
+
+

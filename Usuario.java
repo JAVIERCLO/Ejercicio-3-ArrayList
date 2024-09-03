@@ -1,22 +1,24 @@
-//Clase para usuarios
-public class Usuario {
-    //Atributos
+// Clase Usuario
+class Usuario {
     private String nombre;
-    private int carnet;
-    
-    //Set&get
-    //Nombre
-    public void setNombre(){
-        nombre = this.nombre;
+    private String carnet;
+
+    public Usuario(String nombre, String carnet) {
+        this.nombre = nombre;
+        this.carnet = carnet;
     }
-    public String getNombre(String nombre){
-        return this.nombre;
+
+    // Métodos getter y setter
+    public String getNombre() {
+        return nombre;
     }
-    //carnet
-    public void setCarnet(){
-        carnet = this.carnet;
+
+    public String getCarnet() {
+        return carnet;
     }
-    public int getCarnet(String carnet){
-        return this.carnet;
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", Carnet: " + carnet;
     }
 }
